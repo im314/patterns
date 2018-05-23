@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "adapter", "adapter\adapter.vcxproj", "{2BB8179E-4162-4BDD-B4F2-933EC3F14EDD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "template_method", "template_method\template_method.vcxproj", "{E7E0FC9E-4477-4BA4-BF70-3DD8B79E46D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BB8179E-4162-4BDD-B4F2-933EC3F14EDD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2BB8179E-4162-4BDD-B4F2-933EC3F14EDD}.Debug|Win32.Build.0 = Debug|Win32
+		{2BB8179E-4162-4BDD-B4F2-933EC3F14EDD}.Release|Win32.ActiveCfg = Release|Win32
+		{2BB8179E-4162-4BDD-B4F2-933EC3F14EDD}.Release|Win32.Build.0 = Release|Win32
+		{E7E0FC9E-4477-4BA4-BF70-3DD8B79E46D7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E7E0FC9E-4477-4BA4-BF70-3DD8B79E46D7}.Debug|Win32.Build.0 = Debug|Win32
+		{E7E0FC9E-4477-4BA4-BF70-3DD8B79E46D7}.Release|Win32.ActiveCfg = Release|Win32
+		{E7E0FC9E-4477-4BA4-BF70-3DD8B79E46D7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
