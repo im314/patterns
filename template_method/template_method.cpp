@@ -11,6 +11,8 @@
 
 
 
+// Template Method for processing files
+//
 class process_file
 {
 protected:
