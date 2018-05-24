@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "adapter", "adapter\adapter.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "template_method", "template_method\template_method.vcxproj", "{E7E0FC9E-4477-4BA4-BF70-3DD8B79E46D7}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "singleton", "singleton\singleton.vcxproj", "{C9394CBC-2C90-487D-B11F-EE8F0BB744F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -21,6 +23,10 @@ Global
 		{E7E0FC9E-4477-4BA4-BF70-3DD8B79E46D7}.Debug|Win32.Build.0 = Debug|Win32
 		{E7E0FC9E-4477-4BA4-BF70-3DD8B79E46D7}.Release|Win32.ActiveCfg = Release|Win32
 		{E7E0FC9E-4477-4BA4-BF70-3DD8B79E46D7}.Release|Win32.Build.0 = Release|Win32
+		{C9394CBC-2C90-487D-B11F-EE8F0BB744F4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C9394CBC-2C90-487D-B11F-EE8F0BB744F4}.Debug|Win32.Build.0 = Debug|Win32
+		{C9394CBC-2C90-487D-B11F-EE8F0BB744F4}.Release|Win32.ActiveCfg = Release|Win32
+		{C9394CBC-2C90-487D-B11F-EE8F0BB744F4}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
