@@ -104,7 +104,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	unique_ptr<i_temp_sensor> sensor1 = make_unique<sensor_adapter>(std::move(fahr_sensor));
 
 // создаём адаптер №2 (адаптер класса)
-	unique_ptr<sensor_adapter2> sensor2 = make_unique<sensor_adapter2>(36.6f);
+	unique_ptr<i_temp_sensor> sensor2 = make_unique<sensor_adapter2>(36.6f);
 
 
 // используем адаптеры
