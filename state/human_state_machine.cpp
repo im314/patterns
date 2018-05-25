@@ -8,29 +8,29 @@ using std::endl;
 
 //
 //
-//    Базовый класс состояния человека
+//    Р‘Р°Р·РѕРІС‹Р№ РєР»Р°СЃСЃ СЃРѕСЃС‚РѕСЏРЅРёСЏ С‡РµР»РѕРІРµРєР°
 //
 //
 
 
 void human_state::move()
 {
-	std::cout <<  "\tдвигаться: ";
+	std::cout <<  "\tРґРІРёРіР°С‚СЊСЃСЏ: ";
 }
 
 void human_state::eat()
 {
-	std::cout <<  "\tкушать:    ";
+	std::cout <<  "\tРєСѓС€Р°С‚СЊ:    ";
 }
 
 void human_state::dream()
 {
-	std::cout <<  "\tмечтать:   ";
+	std::cout <<  "\tРјРµС‡С‚Р°С‚СЊ:   ";
 }
 
 void human_state::sleep()
 {
-	std::cout <<  "\tспать:     ";
+	std::cout <<  "\tСЃРїР°С‚СЊ:     ";
 }
 
 const std::string human_state::state_name()
@@ -44,38 +44,38 @@ const std::string human_state::state_name()
 
 //
 //
-//    Состояние 'НА РАБОТЕ'
+//    РЎРѕСЃС‚РѕСЏРЅРёРµ 'РќРђ Р РђР‘РћРўР•'
 //
 //
 
 
 state_work::state_work()
 {
-	name = "Состояние 'НА РАБОТЕ'";
+	name = "РЎРѕСЃС‚РѕСЏРЅРёРµ 'РќРђ Р РђР‘РћРўР•'";
 }
 
 void state_work::move()
 {
 	human_state::move();
-	cout <<  "не могу двигаться, т.к. должен сидеть у монитора" << endl;
+	cout <<  "РЅРµ РјРѕРіСѓ РґРІРёРіР°С‚СЊСЃСЏ, С‚.Рє. РґРѕР»Р¶РµРЅ СЃРёРґРµС‚СЊ Сѓ РјРѕРЅРёС‚РѕСЂР°" << endl;
 }
 
 void state_work::eat()
 {
 	human_state::eat();
-	cout <<   "пообедал" << endl;
+	cout <<   "РїРѕРѕР±РµРґР°Р»" << endl;
 }
 
 void state_work::dream()
 {
 	human_state::dream();
-	cout << "мечтать тут некогда, надо писать код" << endl;
+	cout << "РјРµС‡С‚Р°С‚СЊ С‚СѓС‚ РЅРµРєРѕРіРґР°, РЅР°РґРѕ РїРёСЃР°С‚СЊ РєРѕРґ" << endl;
 }
 
 void state_work::sleep()
 {
 	human_state::sleep();
-	cout << "спать тут можно, только если только ты Валера" << endl;
+	cout << "СЃРїР°С‚СЊ С‚СѓС‚ РјРѕР¶РЅРѕ, С‚РѕР»СЊРєРѕ РµСЃР»Рё С‚РѕР»СЊРєРѕ С‚С‹ Р’Р°Р»РµСЂР°" << endl;
 }
 
 
@@ -87,7 +87,7 @@ human_state& state_work::instance()
 
 human_state& state_work::finish()
 {
-	cout << "завершаю " << state_name() << endl;
+	cout << "Р·Р°РІРµСЂС€Р°СЋ " << state_name() << endl;
 	return state_home::instance();
 }
 
@@ -97,38 +97,38 @@ human_state& state_work::finish()
 
 //
 //
-//    Состояние 'ДОМА'
+//    РЎРѕСЃС‚РѕСЏРЅРёРµ 'Р”РћРњРђ'
 //
 //
 
 
 state_home::state_home()
 {
-	name = "Состояние 'ДОМА'";
+	name = "РЎРѕСЃС‚РѕСЏРЅРёРµ 'Р”РћРњРђ'";
 }
 
 void state_home::move()
 {
 	human_state::move();
-	cout <<  "могу ходить от туалета к холодильнику" << endl;
+	cout <<  "РјРѕРіСѓ С…РѕРґРёС‚СЊ РѕС‚ С‚СѓР°Р»РµС‚Р° Рє С…РѕР»РѕРґРёР»СЊРЅРёРєСѓ" << endl;
 }
 
 void state_home::eat()
 {
 	human_state::eat();
-	cout <<   "поужинал" << endl;
+	cout <<   "РїРѕСѓР¶РёРЅР°Р»" << endl;
 }
 
 void state_home::dream()
 {
 	human_state::dream();
-	cout << "мечтать можно, но недолго" << endl;
+	cout << "РјРµС‡С‚Р°С‚СЊ РјРѕР¶РЅРѕ, РЅРѕ РЅРµРґРѕР»РіРѕ" << endl;
 }
 
 void state_home::sleep()
 {
 	human_state::sleep();
-	cout << "спать некогда" << endl;
+	cout << "СЃРїР°С‚СЊ РЅРµРєРѕРіРґР°" << endl;
 }
 
 human_state& state_home::instance()
@@ -139,7 +139,7 @@ human_state& state_home::instance()
 
 human_state& state_home::finish()
 {
-	cout << "завершил " << state_name() << endl;
+	cout << "Р·Р°РІРµСЂС€РёР» " << state_name() << endl;
 	return state_sleep::instance();
 }
 
@@ -149,35 +149,35 @@ human_state& state_home::finish()
 
 //
 //
-//    Состояние 'СОН'
+//    РЎРѕСЃС‚РѕСЏРЅРёРµ 'РЎРћРќ'
 //
 //
 
 
 state_sleep::state_sleep()
 {
-	name = "Состояние 'СОН'";
+	name = "РЎРѕСЃС‚РѕСЏРЅРёРµ 'РЎРћРќ'";
 }
 
 void state_sleep::move()
 {
 	human_state::move();
-	cout <<  "двигаюсь во сне" << endl;
+	cout <<  "РґРІРёРіР°СЋСЃСЊ РІРѕ СЃРЅРµ" << endl;
 }
 
 void state_sleep::eat()
 {
-	human_state::eat();  cout <<   "кушать вряд ли получится" << endl;
+	human_state::eat();  cout <<   "РєСѓС€Р°С‚СЊ РІСЂСЏРґ Р»Рё РїРѕР»СѓС‡РёС‚СЃСЏ" << endl;
 }
 
 void state_sleep::dream()
 {
-	human_state::dream();  cout << "целых 4 часа для мечт" << endl;
+	human_state::dream();  cout << "С†РµР»С‹С… 4 С‡Р°СЃР° РґР»СЏ РјРµС‡С‚" << endl;
 }
 
 void state_sleep::sleep()
 {
-	human_state::sleep();  cout << "я и так сплю! )))" << endl;
+	human_state::sleep();  cout << "СЏ Рё С‚Р°Рє СЃРїР»СЋ! )))" << endl;
 }
 
 human_state& state_sleep::instance()
@@ -187,7 +187,7 @@ human_state& state_sleep::instance()
 
 human_state& state_sleep::finish()
 {
-	cout << "завершаю " << state_name() << endl;
+	cout << "Р·Р°РІРµСЂС€Р°СЋ " << state_name() << endl;
 	return state_work::instance();
 }
 
@@ -197,7 +197,7 @@ human_state& state_sleep::finish()
 
 //
 //
-//    Класс-контекст ЧЕЛОВЕК
+//    РљР»Р°СЃСЃ-РєРѕРЅС‚РµРєСЃС‚ Р§Р•Р›РћР’Р•Рљ
 //
 //
 
@@ -205,7 +205,7 @@ human_state& state_sleep::finish()
 void human::change_state(human_state *new_state)
 {
 	state = new_state;
-	cout << endl << "перешёл в " << state->state_name() << endl;
+	cout << endl << "РїРµСЂРµС€С‘Р» РІ " << state->state_name() << endl;
 }
 
 human::human()
