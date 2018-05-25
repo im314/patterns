@@ -1,10 +1,13 @@
-// sensor_adapter.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
 #include <memory>
 #include <conio.h>
 #include <iostream>
+
+
+
+// јдаптер Ч это структурный паттерн проектировани€, который позвол€ет
+// объектам с несовместимыми интерфейсами работать вместе.
+// 
 
 
 

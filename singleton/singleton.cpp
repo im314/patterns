@@ -1,6 +1,3 @@
-// singleton.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
 #include <cstdint>
 #include <iostream>
@@ -8,6 +5,12 @@
 #include <array>
 #include <numeric>
 #include <conio.h> // _getch()
+
+
+
+// ќдиночка Ч это порождающий паттерн проектировани€, который гарантирует, 
+// что у класса есть только один экземпл€р, и
+// предоставл€ет к нему глобальную точку доступа.
 
 
 

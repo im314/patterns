@@ -1,6 +1,3 @@
-// state.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
 #include <iostream>
 #include <cstdint>
@@ -10,12 +7,18 @@
 
 
 
+// Состояние (State) — это поведенческий паттерн проектирования, который позволяет объектам
+// менять поведение в зависимости от своего состояния.
+// Извне создаётся впечатление, что изменился класс объекта.
+
+
+
 
 int _tmain(int argc, _TCHAR* argv[])
 {
 	setlocale(LC_ALL, "Russian");
 
-	human person;
+	human person; // Класс-контекст ЧЕЛОВЕК
 	uint32_t i=0;
 
 	do

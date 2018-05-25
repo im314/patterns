@@ -1,12 +1,15 @@
-// template_method.cpp : Defines the entry point for the console application.
-//
-
 #include "stdafx.h"
 #include <iostream>
 #include <vector>
 #include <string>
 #include <memory>
 #include "conio.h"
+
+
+
+// Ўаблонный метод Ч это поведенческий паттерн проектировани€, который определ€ет скелет алгоритма,
+// перекладыва€ ответственность за некоторые его шаги на подклассы.
+// ѕаттерн позвол€ет подклассам переопредел€ть шаги алгоритма, не мен€€ его общей структуры.
 
 
 
